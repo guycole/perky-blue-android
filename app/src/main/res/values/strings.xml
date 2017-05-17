@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PerkyBlue</string>
+
+    <string name="discovery_cancel">Cancel Discovery</string>
+    <string name="discovery_start">Start Discovery</string>
+
+    <string name="label_no_rows">No Rows</string>
+    <string name="label_stub">Stub</string>
+
+    <string name="led_green_toggle">Green LED Toggle</string>
+    <string name="led_red_toggle">Red LED Toggle</string>
+    <string name="led_yellow_toggle">Yellow LED Toggle</string>
 </resources>

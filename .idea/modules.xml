@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PerkyBlue.iml" filepath="$PROJECT_DIR$/PerkyBlue.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/perky-blue-android.iml" filepath="$PROJECT_DIR$/perky-blue-android.iml" />
     </modules>
   </component>
 </project>
