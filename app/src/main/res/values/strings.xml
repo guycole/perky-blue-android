@@ -4,6 +4,16 @@
     <string name="discovery_cancel">Cancel Discovery</string>
     <string name="discovery_start">Start Discovery</string>
 
+    <string name="label_bt_address">Remote Bluetooth Address</string>
+    <string name="label_bt_name">Remote Bluetooth Name</string>
+    <string name="label_bt_state_connected">Bluetooth State Connected</string>
+    <string name="label_bt_state_connecting">Bluetooth State Connecting</string>
+
+    <string name="label_bt_state_discovery_start">Bluetooth State Discovery Start</string>
+    <string name="label_bt_state_discovery_finish">Bluetooth State Discovery Finish</string>
+
+    <string name="label_bt_state_failure">Bluetooth State Failure</string>
+    <string name="label_bt_state_unknown">Bluetooth State Unknown</string>
     <string name="label_no_rows">No Rows</string>
     <string name="label_stub">Stub</string>
 

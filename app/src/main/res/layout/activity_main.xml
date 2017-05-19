@@ -19,13 +19,37 @@
         android:layout_height="wrap_content"
         android:text="@string/discovery_cancel"
         app:layout_constraintTop_toBottomOf="@id/buttonDiscoveryStart"/>
+    
+    <TextView
+        android:id="@+id/tvBtName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bt_name"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonDiscoveryCancel"/>
+
+    <TextView
+        android:id="@+id/tvBtAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bt_address"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBtName"/>
+
+    <TextView
+        android:id="@+id/tvBtState"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bt_state_unknown"
+        android:padding="3dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBtAddress"/>
 
     <Button
         android:id="@+id/buttonToggleRedLed"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/led_red_toggle"
-        app:layout_constraintTop_toBottomOf="@id/buttonDiscoveryCancel"/>
+        app:layout_constraintTop_toBottomOf="@id/tvBtState"/>
 
     <Button
         android:id="@+id/buttonToggleYellowLed"
