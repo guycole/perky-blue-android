@@ -31,10 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public final String LOG_TAG = getClass().getName();
 
     public final String SERIAL_SERVICE = "00001101-0000-1000-8000-00805F9B34FB";
-//    public final String SERIAL_SERVICE = "00001101-0000-1000-8000-00805F9B34FC";
 
     public enum BB_LED {UNKNOWN_LED, GREEN_LED, RED_LED, YELLOW_LED};
-    public enum BT_STATE {UNKNOWN_STATE, CONNECTED_STATE, DISCOVERY_FINISH_STATE, DISCOVERY_START_STATE, FAILURE_STATE};
+    public enum BT_STATE {UNKNOWN_STATE, CONNECTED_STATE, DISCOVERY_FINISH_STATE, DISCOVERY_START_STATE, FAILURE_STATE, NULL_ADAPTER};
 
     private ArrayList<BluetoothDevice> _deviceList = new ArrayList<BluetoothDevice>();
     private BluetoothDevice _selectedDevice = null;
@@ -124,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d(LOG_TAG, "discoveryStart");
 
         if (_bluetoothAdapter == null) {
-            Log.i(LOG_TAG, "unable to run w/null BT adapter");
+            updateState(BT_STATE.NULL_ADAPTER);
             return;
         }
 
@@ -207,6 +206,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 toggleButton(false);
                 startCancelButton(true);
                 _tvBtState.setText(getString(R.string.label_bt_state_failure));
+                break;
+            case NULL_ADAPTER:
+                toggleButton(false);
+                startCancelButton(true);
+                _tvBtState.setText(getString(R.string.label_null_adapter));
                 break;
             case UNKNOWN_STATE:
                 toggleButton(false);
